@@ -84,6 +84,7 @@
   border: 1px solid #8aec5e;
   border-radius: 5px;
   white-space: nowrap; 
+  margin: 0 10px; 
   transition: background-color 0.3s ease, color 0.3s ease;
   text-align: center;
 }

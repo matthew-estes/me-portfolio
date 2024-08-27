@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("assets/images/apple-wallpaper.png");
+  background-image: url("../assets/images/apple-wallpaper.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,8 +27,8 @@ body::-webkit-scrollbar {
 }
 
 body {
--ms-overflow-style: none;  
-scrollbar-width: none;  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .terminal {
@@ -44,87 +44,96 @@ scrollbar-width: none;
   overflow-y: auto;
 }
 
-.terminal-header {
-    background-color: #444444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 0 16px;
-    height: 40px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  .window-controls {
-    position: absolute;
-    left: 16px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .circle {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin-right: 8px;
-  }
-  
-  .red {
-    background-color: #ff5f56;
-  }
-  
-  .yellow {
-    background-color: #ffbd2e;
-  }
-  
-  .green {
-    background-color: #27c93f;
-  }
-  
-  .terminal-title {
-    background-color: #444444;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    color: #ffffff;
-    line-height: 40px;
-  }
+.terminal::-webkit-scrollbar {
+  display: none;
+}
 
-  .nav-tabs {
-    background-color: #292b2c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-  }
-  
-  .tab {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 0;
-    flex-grow: 1;
-    text-align: center;
-    background-color: #292b2c;
-    border: 1px solid #292b2c;
-    border-top: 1px solid #131414;
-  }
-  
-  .tab.active {
-    background-color: #444444;
-    border-top: 1px solid #444444;
-    color: #8aec5e;
-  }
-  
-  .tab:hover {
-    color: #8aec5e;
-  }
-  
-  .intro-text,
-  .greeting {
-    font-size: 1.3em;
-    margin: 80px 50px 0;
-    text-align: center;
-  }
+.terminal {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.terminal-header {
+  background-color: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 16px;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.window-controls {
+  position: absolute;
+  left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.red {
+  background-color: #ff5f56;
+}
+
+.yellow {
+  background-color: #ffbd2e;
+}
+
+.green {
+  background-color: #27c93f;
+}
+
+.terminal-title {
+  background-color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  line-height: 40px;
+}
+
+.nav-tabs {
+  background-color: #292b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.tab {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 0;
+  flex-grow: 1;
+  text-align: center;
+  background-color: #292b2c;
+  border: 1px solid #292b2c;
+  border-top: 1px solid #131414;
+}
+
+.tab.active {
+  background-color: #444444;
+  border-top: 1px solid #444444;
+  color: #8aec5e;
+}
+
+.tab:hover {
+  color: #8aec5e;
+}
+
+.intro-text,
+.greeting {
+  font-size: 1.3em;
+  margin: 80px 50px 0;
+  text-align: center;
+}
