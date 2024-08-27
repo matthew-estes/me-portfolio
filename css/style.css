@@ -33,3 +33,51 @@ body {
   flex-direction: column;
   justify-content: flex-start;
 }
+.terminal-header {
+    background-color: #444444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 16px;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .window-controls {
+    position: absolute;
+    left: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .red {
+    background-color: #ff5f56;
+  }
+  
+  .yellow {
+    background-color: #ffbd2e;
+  }
+  
+  .green {
+    background-color: #27c93f;
+  }
+  
+  .terminal-title {
+    background-color: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    line-height: 40px;
+  }
