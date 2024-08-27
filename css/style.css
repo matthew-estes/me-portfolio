@@ -81,3 +81,39 @@ body {
     color: #ffffff;
     line-height: 40px;
   }
+
+  .nav-tabs {
+    background-color: #292b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+  
+  .tab {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+    flex-grow: 1;
+    text-align: center;
+    background-color: #292b2c;
+    border: 1px solid #292b2c;
+    border-top: 1px solid #131414;
+  }
+  
+  .tab.active {
+    background-color: #444444;
+    border-top: 1px solid #444444;
+    color: #8aec5e;
+  }
+  
+  .tab:hover {
+    color: #8aec5e;
+  }
+  
+  .intro-text,
+  .greeting {
+    font-size: 1.3em;
+    margin: 80px 50px 0;
+    text-align: center;
+  }
