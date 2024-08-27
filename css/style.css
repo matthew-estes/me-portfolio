@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/images/apple-wallpaper.png");
+  background-image: url("/my-portfolio/assets/images/apple-wallpaper.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
