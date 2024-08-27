@@ -54,11 +54,11 @@ const repoName = "/my-portfolio";
 const currentPage = window.location.pathname.replace(repoName, "").split('/').pop() || "index.html";
 
 const pageToTabClass = {
-
-  "/index.html": "home-tab",
-  "/projects.html": "projects-tab",
-  "/contact.html": "contact-tab",
-};
+    "index.html": "home-tab",
+    "projects.html": "projects-tab",
+    "contact.html": "contact-tab",
+  };
+  
 
 if (pageToTabClass[currentPage]) {
   document.querySelector(`.${pageToTabClass[currentPage]}`).classList.add("active");
