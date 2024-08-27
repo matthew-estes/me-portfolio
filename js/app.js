@@ -49,3 +49,16 @@ skillCards.forEach((card) => {
     card.classList.remove("flipped");
   });
 });
+
+const currentPage = window.location.pathname;
+
+const pageToTabClass = {
+  "/": "home-tab",
+  "/index.html": "home-tab",
+  "/projects.html": "projects-tab",
+  "/contact.html": "contact-tab",
+};
+
+if (pageToTabClass[currentPage]) {
+  document.querySelector(`.${pageToTabClass[currentPage]}`).classList.add("active");
+}
