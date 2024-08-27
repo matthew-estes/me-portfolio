@@ -41,7 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .terminal::-webkit-scrollbar {
@@ -51,6 +51,12 @@ body {
 .terminal {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
 }
 
 .terminal-header {
