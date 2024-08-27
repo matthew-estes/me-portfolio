@@ -50,10 +50,11 @@ skillCards.forEach((card) => {
   });
 });
 
-const currentPage = window.location.pathname;
+const repoName = "/my-portfolio";
+const currentPage = window.location.pathname.replace(repoName, "").split('/').pop() || "index.html";
 
 const pageToTabClass = {
-  "/": "home-tab",
+
   "/index.html": "home-tab",
   "/projects.html": "projects-tab",
   "/contact.html": "contact-tab",
