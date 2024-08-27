@@ -1,37 +1,37 @@
 .project-list {
-    flex-grow: 1;
-    overflow-y: scroll;
-    margin: 40px;
-    padding: 20px;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    scroll-behavior: smooth;
-  }
-  
-  .project-list::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .project-images {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  .project-images img {
-    max-width: 45%;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .project-images img:hover {
-    transform: scale(1.2);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
-  }
+  flex-grow: 1;
+  overflow-y: scroll;
+  margin: 40px;
+  padding: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
 
-  .project h1,
+.project-list::-webkit-scrollbar {
+  display: none;
+}
+
+.project-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.project-images img {
+  max-width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+.project h1,
 .project h2 {
   text-align: center;
   color: #8aec5e;
@@ -68,9 +68,11 @@
 }
 
 .project h3.urls {
-  font-size: 1.2em;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
+  font-size: 1.2em;
   margin: 40px 0 100px;
   line-height: 1.4;
 }
@@ -78,12 +80,12 @@
 .project h3.urls a {
   color: #8aec5e;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 0px;
   border: 1px solid #8aec5e;
   border-radius: 5px;
-  margin: 10px;
+  white-space: nowrap; 
   transition: background-color 0.3s ease, color 0.3s ease;
-  max-width: 100%;
+  text-align: center;
 }
 
 .project h3.urls a:hover {
@@ -97,8 +99,7 @@
     align-items: center;
   }
   .project h3.urls a {
-    width: 100%; 
-    text-align: center;
-    margin-bottom: 20px;
+    width: 100%;
+   
   }
 }
