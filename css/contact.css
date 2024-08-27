@@ -1,6 +1,7 @@
 .contact-grid {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; 
     margin-top: 100px;
     gap: 40px;
   }
@@ -11,6 +12,8 @@
     border-radius: 10px;
     height: 125px;
     width: 125px;
+    min-width: 80px;
+    max-width: 100%;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -34,4 +37,15 @@
   .contact-box:hover {
     transform: translateY(-20px);
     box-shadow: 0 2px 20px rgba(75, 243, 89, 0.7);
+  }
+
+  @media (max-width: 600px) {
+    .contact-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-box {
+      width: 100%; 
+      margin-bottom: 20px;
+    }
   }

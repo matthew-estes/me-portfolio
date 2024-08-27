@@ -70,6 +70,7 @@
 .project h3.urls {
   font-size: 1.2em;
   text-align: center;
+  flex-wrap: wrap;
   margin: 40px 0 100px;
   line-height: 1.4;
 }
@@ -88,3 +89,4 @@
   background-color: #8aec5e;
   color: #05090e;
 }
+
