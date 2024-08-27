@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #8aec5e;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/images/apple-wallpaper.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.terminal {
+  max-width: 900px;
+  width: 90%;
+  height: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: #05090e;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
