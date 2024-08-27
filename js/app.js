@@ -37,3 +37,15 @@ function greetingAndMessage() {
     const finalMessage = greetingAndMessage();
     typeWriter(finalMessage, "introText", 50);
   };
+
+const skillCards = document.querySelectorAll(".skill-card");
+
+skillCards.forEach((card) => {
+  card.addEventListener("mouseover", () => {
+    card.classList.add("flipped");
+  });
+
+  card.addEventListener("mouseout", () => {
+    card.classList.remove("flipped");
+  });
+});
